@@ -292,8 +292,9 @@
 .atalho p { margin: 0; color: var(--cal-suave); font-size: 16px; }
 .atalho .ir { margin-top: auto; padding-top: 10px; font-weight: 800; }
 @media (max-width: 1000px) { .atalhos-grade { grid-template-columns: 1fr 1fr; } }
+.atalhos-grade.dois { grid-template-columns: 1fr 1fr; max-width: 900px; }
 @media (max-width: 760px) {
-  .atalhos-grade { grid-template-columns: 1fr; gap: 10px; }
+  .atalhos-grade, .atalhos-grade.dois { grid-template-columns: 1fr; gap: 10px; }
   .atalho { min-height: 0; flex-direction: row; flex-wrap: wrap; align-items: baseline; column-gap: 12px; padding: 18px 56px 18px 20px; }
   .atalho h3 { font-size: 38px; }
   .atalho p { flex-basis: 100%; }
