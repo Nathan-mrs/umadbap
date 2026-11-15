@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UMADBAP — União de Mocidade do Baixo Parnaíba</title>
+<meta name="description" content="UMADBAP — União de Mocidade das Assembleias de Deus do Baixo Parnaíba. Uma juventude que carrega as marcas de Cristo.">
+<meta name="theme-color" content="#F3EBDD">
+<meta property="og:title" content="UMADBAP — Eu trago as marcas de Cristo">
+<meta property="og:description" content="União de Mocidade das Assembleias de Deus do Baixo Parnaíba.">
+<meta property="og:image" content="fotos/drone-palco-1200.webp">
+<link rel="icon" href="assets/logo-umadbap.jpg">
+<script>
+  /* modo leve: celulares e telas de toque pulam a entrada da logo e os efeitos mais pesados */
+  if (matchMedia("(max-width: 760px), (pointer: coarse)").matches) document.documentElement.classList.add("modo-leve");
+</script>
+<link rel="preload" href="fontes/league-gothic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontes/alegreya.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="videos/reel-capa.jpg" as="image" media="(max-width: 900px) and (orientation: portrait)">
+<link rel="preload" href="videos/abertura-capa.jpg" as="image" media="(min-width: 901px), (orientation: landscape)">
+<link rel="stylesheet" href="css/sites-incriveis.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/paginas.css">
+<script src="js/config.js" defer></script>
+<script src="js/comum.js" defer></script>
+<script src="js/sites-incriveis.js" defer></script>
+<script src="js/site.js" defer></script>
+</head>
+<body>
+
+<canvas id="fagulhas" aria-hidden="true"></canvas>
+
+<header class="topo">
+  <a class="topo-marca" href="#inicio" aria-label="UMADBAP — início">
+    <img src="assets/logo-umadbap.jpg" alt="" width="40" height="40">
+    <span>UMADBAP</span>
+  </a>
+  <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span></button>
+  <nav class="topo-nav" id="menu" aria-label="Principal">
+    <a href="index.html" aria-current="page">Início</a>
+    <a href="inscricao.html">Inscrição</a>
+    <a href="camisas.html">Camisas</a>
+    <a href="fotos.html">Fotos</a>
+    <a href="patrocinio.html">Patrocínio</a>
+    <a class="topo-cta" href="https://www.instagram.com/umadbap/" target="_blank" rel="noopener">@umadbap</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- CENA 1 — ABERTURA -->
+<section id="inicio" class="entrada">
+  <div class="abertura">
+    <div class="abertura-foto">
+      <video id="video-abertura" data-src="videos/abertura.mp4" data-src-leve="videos/reel-2.mp4,videos/reel-1.mp4" data-capa-leve="videos/reel-capa.jpg" poster="videos/abertura-capa.jpg" loop playsinline preload="none" aria-label="Vídeo do 8º Congresso da UMADBAP: louvor, Palavra e adoração"></video>
+    </div>
+    <button class="botao-som" id="botao-som" type="button" aria-pressed="false">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3z"/><path class="onda" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12"/><path class="corte" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16 9l6 6M22 9l-6 6"/></svg>
+      <span>Ativar som</span>
+    </button>
+    <div class="abertura-texto">
+      <p class="rotulo">União de Mocidade das Assembleias de Deus do Baixo Parnaíba</p>
+      <h1 class="abertura-titulo">UMADBAP</h1>
+      <p class="abertura-sub">Uma juventude acesa no Baixo Parnaíba — que leva no corpo, na voz e na vida as marcas de Cristo.</p>
+    </div>
+    <div class="entrada-veu" aria-hidden="true"></div>
+  </div>
+</section>
+<img id="logo-voo" class="logo-voo" src="assets/logo-umadbap.jpg" alt="" aria-hidden="true" width="150" height="150">
+
+<!-- ATALHOS — o que dá para fazer no site -->
+<section class="atalhos" aria-label="Acesso rápido">
+  <ul class="atalhos-grade">
+    <li><a class="atalho" href="inscricao.html"><span class="num">Congresso</span><h3>Inscrição</h3><p>Individual ou caravana da sua igreja, em poucos minutos.</p><span class="ir"><span>Fazer inscrição </span>→</span></a></li>
+    <li><a class="atalho" href="camisas.html"><span class="num">Loja</span><h3>Camisas</h3><p>Masculina e feminina, do P ao XG. Peça a sua ou a do grupo.</p><span class="ir"><span>Pedir camisa </span>→</span></a></li>
+    <li><a class="atalho" href="fotos.html"><span class="num">Galeria</span><h3>Fotos</h3><p>Os álbuns de cada culto, prontos para ver e baixar.</p><span class="ir"><span>Ver fotos </span>→</span></a></li>
+    <li><a class="atalho" href="patrocinio.html"><span class="num">Parcerias</span><h3>Patrocínio</h3><p>Seja um patrocinador e caminhe com a mocidade do Baixo Parnaíba.</p><span class="ir"><span>Quero apoiar </span>→</span></a></li>
+  </ul>
+</section>
+
+<!-- CENA 2 — QUEM SOMOS -->
+<section id="quem-somos" class="quem">
+  <div class="quem-grade">
+    <div class="quem-texto">
+      <p class="rotulo" data-fx="surgir">Quem somos</p>
+      <h2 data-fx="subir">Uma mocidade<br>cheia do poder<br>de Deus.</h2>
+      <p data-fx="subir" data-fx-atraso="120">A UMADBAP é a União de Mocidade das Assembleias de Deus do Baixo Parnaíba. Reunimos os jovens das igrejas da região para buscar a Deus juntos — em oração, em louvor, na Palavra e na comunhão.</p>
+      <p data-fx="subir" data-fx-atraso="220">Todo ano, a mocidade se encontra no Congresso da UMADBAP: dias inteiros de culto, de ensino e de altar, que ficam marcados na memória e no coração de quem vive.</p>
+    </div>
+    <figure class="quem-foto" data-fx="direita">
+      <img src="fotos/desfile-bandeiras-1600.webp" srcset="fotos/desfile-bandeiras-800.webp 800w, fotos/desfile-bandeiras-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 50vw" alt="Jovens de camiseta vinho entram no templo carregando as bandeiras das cidades" loading="lazy" decoding="async">
+      <figcaption>Abertura do 8º Congresso — entrada das bandeiras.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CENA 3 — O CONGRESSO EM NÚMEROS + TRILHO DOS CULTOS -->
+<section id="congresso" class="numeros">
+  <div class="capsula" data-fx="crescer">
+    <div class="numeros-cabeca">
+      <p class="rotulo" data-fx="surgir">8º Congresso da UMADBAP · 2026 · Santa Quitéria</p>
+      <h2 data-fx="subir">“Eu trago as marcas de Cristo”</h2>
+    </div>
+    <dl class="numeros-lista">
+      <div data-fx="subir"><dt>edição do congresso</dt><dd><span data-fx="contar" data-fx-fim="8" data-fx-sufixo="º">0</span></dd></div>
+      <div data-fx="subir" data-fx-atraso="120"><dt>dias de congresso</dt><dd><span data-fx="contar" data-fx-fim="3">0</span></dd></div>
+      <div data-fx="subir" data-fx-atraso="240"><dt>cultos, de manhã e à noite</dt><dd><span data-fx="contar" data-fx-fim="5">0</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="cultos" data-fx-fixa data-fx-altura="4" aria-label="Os cinco cultos do 8º Congresso">
+  <div class="fx-palco">
+    <div class="cultos-cabeca">
+      <p class="rotulo">Três dias, cinco cultos</p>
+      <div class="cultos-barra" aria-hidden="true"><i></i></div>
+    </div>
+    <div class="cultos-trilho" data-fx="trilho">
+      <article class="culto">
+        <img src="fotos/palco-letreiro-1600.webp" alt="Templo cheio na primeira noite, com o letreiro UMADBAP diante do palco" loading="lazy" decoding="async">
+        <div><span class="culto-dia">Dia I</span><h3>Noite de abertura</h3><p>O templo cheio, as bandeiras das cidades e o tema no telão: começou o 8º Congresso.</p></div>
+      </article>
+      <article class="culto">
+        <img src="fotos/adoracao-maos-1600.webp" alt="Jovens de mãos levantadas e olhos fechados durante o louvor" loading="lazy" decoding="async">
+        <div><span class="culto-dia">Dia II</span><h3>Manhã</h3><p>Louvor, Palavra e altar. A mocidade de mãos erguidas, sem pressa de ir embora.</p></div>
+      </article>
+      <article class="culto">
+        <img src="fotos/noite-rua-1600.webp" alt="Multidão reunida à noite na rua diante do palco ao ar livre" loading="lazy" decoding="async">
+        <div><span class="culto-dia">Dia II</span><h3>Noite</h3><p>O culto ganhou a rua: palco montado e a cidade inteira chamada a ouvir.</p></div>
+      </article>
+      <article class="culto">
+        <img src="fotos/multidao-maos-1600.webp" alt="Galeria e plateia lotadas, todos de mãos levantadas" loading="lazy" decoding="async">
+        <div><span class="culto-dia">Dia III</span><h3>Manhã</h3><p>Galeria lotada. Uma geração inteira louvando as obras de Deus.</p></div>
+      </article>
+      <article class="culto">
+        <img src="fotos/noite-palco-1600.webp" alt="Palco ao ar livre na última noite, com o letreiro UMADBAP" loading="lazy" decoding="async">
+        <div><span class="culto-dia">Dia III</span><h3>Noite de encerramento</h3><p>A última noite — e a certeza de que as marcas vão com a gente pra casa.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CENA 4 — O PICO: A MARCA A FOGO -->
+<section id="marca" class="marca" data-fx-fixa data-fx-altura="5">
+  <div class="fx-palco">
+    <div class="marca-calor" aria-hidden="true"></div>
+    <p class="marca-instrucao rotulo" aria-hidden="true">Gálatas 6:17</p>
+    <h2 class="sr-only">Eu trago as marcas de Cristo</h2>
+    <svg class="marca-svg" viewBox="0 0 1000 620" role="img" aria-label="Eu trago as marcas de Cristo — gravado a fogo">
+      <defs>
+        <linearGradient id="g-brasa" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFD9A0"/>
+          <stop offset=".45" stop-color="#FF8A3D"/>
+          <stop offset="1" stop-color="#C4260F"/>
+        </linearGradient>
+        <filter id="f-borda" x="-5%" y="-5%" width="110%" height="110%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/>
+          <feDisplacementMap in="SourceGraphic" scale="34"/>
+        </filter>
+        <filter id="f-carvao">
+          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="r"/>
+          <feColorMatrix in="r" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.1" result="buracos"/>
+          <feComposite in="SourceGraphic" in2="buracos" operator="in"/>
+        </filter>
+        <mask id="m-queima" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="620">
+          <g filter="url(#f-borda)">
+            <rect id="queima-frente" x="-40" y="-40" width="0" height="700" fill="#fff"/>
+          </g>
+        </mask>
+        <g id="frase">
+          <text x="500" y="150" text-anchor="middle" class="t-pequeno">EU TRAGO AS</text>
+          <text x="500" y="430" text-anchor="middle" class="t-grande">MARCAS</text>
+          <text x="500" y="590" text-anchor="middle" class="t-medio">DE CRISTO</text>
+        </g>
+      </defs>
+      <!-- o contorno frio, antes do fogo -->
+      <use href="#frase" class="frase-fria"/>
+      <!-- a marca queimada (fica depois que esfria) -->
+      <g mask="url(#m-queima)">
+        <use href="#frase" class="frase-carvao" filter="url(#f-carvao)"/>
+        <use href="#frase" class="frase-brasa" fill="url(#g-brasa)"/>
+      </g>
+    </svg>
+    <blockquote class="marca-versiculo">
+      <p>“Desde agora, ninguém me inquiete; porque trago no meu corpo as marcas do Senhor Jesus.”</p>
+      <cite>Gálatas 6:17</cite>
+    </blockquote>
+  </div>
+</section>
+
+<script>
+  /* no celular as cenas presas ficam mais curtas (roda antes do motor, que lê data-fx-altura) */
+  if (document.documentElement.classList.contains("modo-leve")) {
+    document.getElementById("marca").setAttribute("data-fx-altura", "3.4");
+    document.querySelector(".cultos").setAttribute("data-fx-altura", "3.2");
+  }
+</script>
+
+<!-- CENA 5 — ROSTOS -->
+<section class="rostos">
+  <div class="rostos-cabeca">
+    <p class="rotulo" data-fx="surgir">As marcas, nos rostos</p>
+    <h2 data-fx="esquerda">Ninguém sai do altar do mesmo jeito que chegou.</h2>
+  </div>
+  <div class="mosaico">
+    <figure class="m-alta"  data-fx="subir"><img src="fotos/adoracao-choro-800.webp" alt="Jovem chora de olhos fechados durante a adoração" loading="lazy" decoding="async"></figure>
+    <figure class="m-larga" data-fx="subir" data-fx-atraso="100"><img src="fotos/biblia-bandeiras-1600.webp" alt="Jovem de vestido vermelho lê a Bíblia entre as bandeiras das cidades" loading="lazy" decoding="async"></figure>
+    <figure class="m-alta"  data-fx="subir" data-fx-atraso="200"><img src="fotos/camiseta-costas-800.webp" alt="Costas da camiseta do congresso: Eu trago as marcas de Cristo, com a cruz e a coroa de espinhos" loading="lazy" decoding="async"></figure>
+    <figure class="m-larga" data-fx="subir"><img src="fotos/jovem-lagrima-1600.webp" alt="Jovem emocionada no meio da plateia" loading="lazy" decoding="async"></figure>
+    <figure class="m-larga" data-fx="subir" data-fx-atraso="100"><img src="fotos/louvor-alegria-1600.webp" alt="Jovens sorrindo e louvando de mãos levantadas" loading="lazy" decoding="async"></figure>
+    <figure class="m-alta"  data-fx="subir" data-fx-atraso="200"><img src="fotos/adoracao-cadeira-800.webp" alt="Jovem em adoração entre as cadeiras" loading="lazy" decoding="async"></figure>
+  </div>
+  <div class="vozes">
+    <p class="rotulo" data-fx="surgir">Vozes do 8º Congresso</p>
+    <ul data-fx="subir">
+      <li>Sofia Oliveira</li><li>Amanda Garcês</li><li>Jessica Thuanny</li><li>João Pedro</li><li>Pr. Isaac Monteiro</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CENA 6 — GRATIDÃO -->
+<section class="gratidao">
+  <img class="gratidao-foto" data-fx-paralaxe="0.12" src="fotos/galatas-slide-1600.webp" alt="" loading="lazy" decoding="async">
+  <div class="gratidao-texto">
+    <p class="rotulo" data-fx="surgir">Gratidão</p>
+    <blockquote data-fx="crescer">
+      <p>“Grandes coisas fez o Senhor por nós, pelas quais estamos alegres.”</p>
+      <cite>Salmos 126:3</cite>
+    </blockquote>
+    <p data-fx="subir" data-fx-atraso="150">À Assembleia de Deus em Santa Quitéria, que abriu as portas e cuidou de cada detalhe do 8º Congresso, ao Projeto Marcos e a cada jovem, pastor, músico e voluntário que fez esses dias acontecerem. Pela coordenação da UMADBAP, Pastor Paulo Roberto.</p>
+  </div>
+</section>
+
+<!-- CENA 7 — FECHAMENTO -->
+<section class="fechamento">
+  <picture class="fechamento-foto" data-fx="crescer">
+    <source media="(max-width: 700px)" srcset="fotos/drone-galeria-1200.webp">
+    <img src="fotos/drone-galeria-2400.webp" alt="Vista de cima do templo lotado, com a galeria cheia de jovens em oração" loading="lazy" decoding="async">
+  </picture>
+  <div class="fechamento-texto">
+    <p class="rotulo">Próximo congresso</p>
+    <h2 data-fx="subir">O fogo não apaga.<br>Vem aí o próximo.</h2>
+    <p data-fx="subir" data-fx-atraso="120">Data, cidade e tema do próximo Congresso da UMADBAP serão anunciados primeiro no nosso Instagram. Segue a gente e fica perto da mocidade.</p>
+    <a class="botao" data-fx="subir" data-fx-atraso="220" href="https://www.instagram.com/umadbap/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>
+      <span>Seguir @umadbap no Instagram</span>
+      <svg class="botao-seta" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <img src="assets/logo-umadbap.jpg" alt="Logo da UMADBAP: chama com pomba sobre a Bíblia aberta" width="72" height="72" loading="lazy" decoding="async">
+  <p class="rodape-nav"><a href="index.html">Início</a><a href="inscricao.html">Inscrição</a><a href="camisas.html">Camisas</a><a href="fotos.html">Fotos</a><a href="patrocinio.html">Patrocínio</a></p>
+  <p><strong>UMADBAP</strong> — União de Mocidade das Assembleias de Deus do Baixo Parnaíba</p>
+  <ul class="redes" aria-label="Redes sociais da UMADBAP">
+    <li><a href="https://www.instagram.com/umadbap/" target="_blank" rel="noopener" aria-label="Instagram @umadbap"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 4c2.2 0 2.4 0 3.3.1 2.2.1 3.2 1.1 3.3 3.3.1.9.1 1.1.1 3.3v2.6c0 2.2 0 2.4-.1 3.3-.1 2.2-1.1 3.2-3.3 3.3-.9.1-1.1.1-3.3.1s-2.4 0-3.3-.1c-2.2-.1-3.2-1.1-3.3-3.3C5.3 15.4 5.3 15.2 5.3 13v-2.6c0-2.2 0-2.4.1-3.3.1-2.2 1.1-3.2 3.3-3.3C9.6 4 9.8 4 12 4zm0-1.6c-2.3 0-2.6 0-3.4.1-3 .1-4.6 1.8-4.8 4.8-.1.8-.1 1.1-.1 3.4v2.6c0 2.3 0 2.6.1 3.4.1 3 1.8 4.6 4.8 4.8.8.1 1.1.1 3.4.1s2.6 0 3.4-.1c3-.1 4.6-1.8 4.8-4.8.1-.8.1-1.1.1-3.4v-2.6c0-2.3 0-2.6-.1-3.4-.1-3-1.8-4.6-4.8-4.8-.8-.1-1.1-.1-3.4-.1z"/></svg><span>Instagram</span></a></li>
+    <li><a href="https://www.tiktok.com/@umadbapoficial" target="_blank" rel="noopener" aria-label="TikTok @umadbapoficial"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.4 2.3 1.9 3.8 4.1 4v3.1a7.7 7.7 0 0 1-4-1.2v6.3c0 3.9-3 6.3-6.2 6.3a6.1 6.1 0 0 1-6.2-6.1c0-3.8 3.3-6.6 7.3-5.9v3.2c-1.9-.5-4.1.6-4.1 2.8 0 1.6 1.3 2.8 2.9 2.8 1.8 0 3-1.2 3-3.3V3h3.2z"/></svg><span>TikTok</span></a></li>
+    <li><a href="https://www.youtube.com/@umadbap" target="_blank" rel="noopener" aria-label="YouTube @umadbap"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22.5 7.2a2.8 2.8 0 0 0-2-2C18.8 4.7 12 4.7 12 4.7s-6.8 0-8.5.5a2.8 2.8 0 0 0-2 2C1 8.9 1 12 1 12s0 3.1.5 4.8a2.8 2.8 0 0 0 2 2c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a2.8 2.8 0 0 0 2-2c.5-1.7.5-4.8.5-4.8s0-3.1-.5-4.8zM9.8 15.1V8.9l5.7 3.1-5.7 3.1z"/></svg><span>YouTube</span></a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
