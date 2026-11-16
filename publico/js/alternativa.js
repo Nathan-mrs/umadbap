@@ -31,7 +31,12 @@
         if (!e.isIntersecting) return;
         abas.forEach(function (a) { a.classList.remove("ativa"); });
         var a = porId[e.target.id];
-        if (a) { a.classList.add("ativa"); a.scrollIntoView({ block: "nearest", inline: "nearest" }); }
+        if (a) {
+          a.classList.add("ativa");
+          // só desliza a barra de abas para o lado (nunca mexe na rolagem da página)
+          var barra = a.parentNode;
+          if (barra.scrollWidth > barra.clientWidth) barra.scrollTo({ left: a.offsetLeft - (barra.clientWidth - a.offsetWidth) / 2, behavior: "smooth" });
+        }
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
     Object.keys(porId).forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
