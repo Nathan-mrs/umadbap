@@ -140,58 +140,9 @@
   </div>
 </section>
 
-<!-- CENA 4 — O PICO: A MARCA A FOGO -->
-<section id="marca" class="marca" data-fx-fixa data-fx-altura="5">
-  <div class="fx-palco">
-    <div class="marca-calor" aria-hidden="true"></div>
-    <p class="marca-instrucao rotulo" aria-hidden="true">Gálatas 6:17</p>
-    <h2 class="sr-only">Eu trago as marcas de Cristo</h2>
-    <svg class="marca-svg" viewBox="0 0 1000 620" role="img" aria-label="Eu trago as marcas de Cristo — gravado a fogo">
-      <defs>
-        <linearGradient id="g-brasa" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#FFD9A0"/>
-          <stop offset=".45" stop-color="#FF8A3D"/>
-          <stop offset="1" stop-color="#C4260F"/>
-        </linearGradient>
-        <filter id="f-borda" x="-5%" y="-5%" width="110%" height="110%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/>
-          <feDisplacementMap in="SourceGraphic" scale="34"/>
-        </filter>
-        <filter id="f-carvao">
-          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="r"/>
-          <feColorMatrix in="r" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.1" result="buracos"/>
-          <feComposite in="SourceGraphic" in2="buracos" operator="in"/>
-        </filter>
-        <mask id="m-queima" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="620">
-          <g filter="url(#f-borda)">
-            <rect id="queima-frente" x="-40" y="-40" width="0" height="700" fill="#fff"/>
-          </g>
-        </mask>
-        <g id="frase">
-          <text x="500" y="150" text-anchor="middle" class="t-pequeno">EU TRAGO AS</text>
-          <text x="500" y="430" text-anchor="middle" class="t-grande">MARCAS</text>
-          <text x="500" y="590" text-anchor="middle" class="t-medio">DE CRISTO</text>
-        </g>
-      </defs>
-      <!-- o contorno frio, antes do fogo -->
-      <use href="#frase" class="frase-fria"/>
-      <!-- a marca queimada (fica depois que esfria) -->
-      <g mask="url(#m-queima)">
-        <use href="#frase" class="frase-carvao" filter="url(#f-carvao)"/>
-        <use href="#frase" class="frase-brasa" fill="url(#g-brasa)"/>
-      </g>
-    </svg>
-    <blockquote class="marca-versiculo">
-      <p>“Desde agora, ninguém me inquiete; porque trago no meu corpo as marcas do Senhor Jesus.”</p>
-      <cite>Gálatas 6:17</cite>
-    </blockquote>
-  </div>
-</section>
-
 <script>
   /* no celular as cenas presas ficam mais curtas (roda antes do motor, que lê data-fx-altura) */
   if (document.documentElement.classList.contains("modo-leve")) {
-    document.getElementById("marca").setAttribute("data-fx-altura", "3.4");
     document.querySelector(".cultos").setAttribute("data-fx-altura", "3.2");
   }
 </script>

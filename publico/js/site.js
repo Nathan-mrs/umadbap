@@ -118,6 +118,7 @@
   var marcaPerto = false, entradaPerto = true;
 
   function atualizarMarca() {
+    if (!marca) return; // cena da marca removida da página
     var rTopo = marcaTopo - window.scrollY;
     var percurso = marcaAltura - vh;
     var p = percurso > 0 ? limitar(-rTopo / percurso, 0, 1) : 1;
@@ -147,7 +148,7 @@
   }
 
   if (reduzido) {
-    frente.setAttribute("width", "1100");
+    if (frente) frente.setAttribute("width", "1100");
     return;
   }
 
@@ -162,8 +163,7 @@
   function medirCena() {
     vh = window.innerHeight;
     entradaAltura = entrada.offsetHeight;
-    var m = marca.getBoundingClientRect();
-    marcaTopo = m.top + window.scrollY; marcaAltura = marca.offsetHeight;
+    if (marca) { var m = marca.getBoundingClientRect(); marcaTopo = m.top + window.scrollY; marcaAltura = marca.offsetHeight; }
     var a = alvo.getBoundingClientRect();
     alvoRet = { left: a.left, top: a.top, width: a.width };
   }
@@ -303,7 +303,7 @@
       marcaPerto = es[0].isIntersecting;
       medirCena();
       atualizarMarca(); // ao entrar ou sair, assenta o estado certo
-    }, { rootMargin: "50% 0px" }).observe(marca);
+    }, { rootMargin: "50% 0px" }).observe(marca || document.body);
   } else { marcaPerto = true; }
   atualizarMarca();
   aoRolar();
