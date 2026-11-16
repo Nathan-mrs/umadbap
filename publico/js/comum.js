@@ -131,7 +131,7 @@
     raiz.className = "ajuda";
     raiz.innerHTML =
       '<div class="ajuda-painel" id="ajuda-painel" role="dialog" aria-label="Ajuda e contato" hidden>' +
-        '<div class="ajuda-topo"><img src="assets/logo-umadbap.jpg" alt="" width="44" height="44">' +
+        '<div class="ajuda-topo"><img src="/assets/logo-umadbap.jpg" alt="" width="44" height="44">' +
           '<div><strong>Fale com a UMADBAP</strong><small>Respondemos pelo WhatsApp</small></div></div>' +
         '<div class="ajuda-corpo">' +
           '<p class="ajuda-titulo">Perguntas frequentes</p>' +

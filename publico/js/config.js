@@ -23,7 +23,7 @@ window.UMADBAP = {
     tamanhos: ["P", "M", "G", "GG", "XG"],
     // Modelos à venda. Para adicionar outro, copie a linha e troque id/nome/foto.
     modelos: [
-      { id: "oficial", nome: "Camisa oficial do congresso", foto: "fotos/camiseta-costas-800.webp" }
+      { id: "oficial", nome: "Camisa oficial do congresso", foto: "/fotos/camiseta-costas-800.webp" }
     ],
     maxPorItem: 500
   },
@@ -42,11 +42,11 @@ window.UMADBAP = {
   fotos: {
     titulo: "8º Congresso · 2026",
     albuns: [
-      { dia: "1º dia", periodo: "noite", capa: "fotos/noite-palco-640.webp",     url: "https://drive.google.com/drive/folders/1_kj9sBLzzV1c20i8S-oP6hEZ6bEiPKOi?usp=drive_link" },
-      { dia: "2º dia", periodo: "manhã", capa: "fotos/louvor-alegria-640.webp",  url: "https://drive.google.com/drive/folders/1cSnJEjFqG_RL1vKgndDvzB_63tIX4eee?usp=drive_link" },
-      { dia: "2º dia", periodo: "noite", capa: "fotos/multidao-maos-640.webp",   url: "https://drive.google.com/drive/folders/1BT6BpXgB_X5wI8orKGiMs2Ba8RxM1Zig?usp=drive_link" },
-      { dia: "3º dia", periodo: "manhã", capa: "fotos/biblia-bandeiras-640.webp",url: "https://drive.google.com/drive/folders/1FVPEt0LHdBtjHPGpWKQNKiJUVMG-xfc2?usp=drive_link" },
-      { dia: "3º dia", periodo: "noite", capa: "fotos/adoracao-maos-640.webp",   url: "https://drive.google.com/drive/folders/1Bglo_RXjQCIQE-QYowyupEiWIrfjhItu?usp=drive_link" }
+      { dia: "1º dia", periodo: "noite", capa: "/fotos/noite-palco-640.webp",     url: "https://drive.google.com/drive/folders/1_kj9sBLzzV1c20i8S-oP6hEZ6bEiPKOi?usp=drive_link" },
+      { dia: "2º dia", periodo: "manhã", capa: "/fotos/louvor-alegria-640.webp",  url: "https://drive.google.com/drive/folders/1cSnJEjFqG_RL1vKgndDvzB_63tIX4eee?usp=drive_link" },
+      { dia: "2º dia", periodo: "noite", capa: "/fotos/multidao-maos-640.webp",   url: "https://drive.google.com/drive/folders/1BT6BpXgB_X5wI8orKGiMs2Ba8RxM1Zig?usp=drive_link" },
+      { dia: "3º dia", periodo: "manhã", capa: "/fotos/biblia-bandeiras-640.webp",url: "https://drive.google.com/drive/folders/1FVPEt0LHdBtjHPGpWKQNKiJUVMG-xfc2?usp=drive_link" },
+      { dia: "3º dia", periodo: "noite", capa: "/fotos/adoracao-maos-640.webp",   url: "https://drive.google.com/drive/folders/1Bglo_RXjQCIQE-QYowyupEiWIrfjhItu?usp=drive_link" }
     ]
   },
 
