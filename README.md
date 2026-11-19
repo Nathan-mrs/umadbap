@@ -3,7 +3,7 @@
 
 Site da **União de Mocidade das Assembleias de Deus do Baixo Parnaíba (UMADBAP)**: apresenta a mocidade e o Congresso anual, reúne os álbuns de fotos de cada culto e recebe pedidos de patrocínio. Ele também traz inscrições e pedidos de camisas, que ficam desligados entre um congresso e outro.
 
-🔗 **No ar:** [umadbap.netlify.app](https://umadbap.netlify.app)
+🔗 **No ar:** [umadbap.netlify.app](https://umadbap.vercel.app)
 
 ---
 
